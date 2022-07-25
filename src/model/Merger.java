@@ -3,7 +3,7 @@ package model;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Merger implements IMerger {
+public class Merger {
 
   private ArrayList<Integer> lst;
 
@@ -12,6 +12,7 @@ public class Merger implements IMerger {
     lst = new ArrayList<Integer>();
     lst.add(1); lst.add(2); lst.add(3); lst.add(4); lst.add(5); lst.add(6); lst.add(7); lst.add(8);
     lst.add(9); lst.add(10);
+    this.randomize();
   }
 
 
@@ -27,12 +28,12 @@ public class Merger implements IMerger {
 
   }
 
-  @Override
   public ArrayList<Integer> getElements() {
     ArrayList<Integer> copy = new ArrayList<Integer>();
     copy.addAll(lst);
     return copy;
   }
+  public void setArr(ArrayList<Integer> arr) {this.lst = arr; }
 
 
 }

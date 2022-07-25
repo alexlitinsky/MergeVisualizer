@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6cbfa59d-9e5f-4612-923a-e9805bf94916" name="Changes" comment="adding interface">
-      <change afterPath="$PROJECT_DIR$/src/model/Merger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/MergerTest.java" afterDir="false" />
+    <list default="true" id="6cbfa59d-9e5f-4612-923a-e9805bf94916" name="Changes" comment="created a merger class, can randomize elements">
+      <change afterPath="$PROJECT_DIR$/src/model/sorters/ISorter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/sorters/MergeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/SorterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MergeVisualizer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MergeVisualizer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/IMerger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/IMerger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/IMerger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Merger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Merger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/MergerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/MergerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +92,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658785612574</updated>
-      <workItem from="1658785616769" duration="2476000" />
+      <workItem from="1658785616769" duration="5543000" />
     </task>
     <task id="LOCAL-00001" summary="adding interface">
       <created>1658786453194</created>
@@ -99,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658786453194</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="created a merger class, can randomize elements">
+      <created>1658788353640</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1658788353640</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +127,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding interface" />
+    <MESSAGE value="created a merger class, can randomize elements" />
+    <option name="LAST_COMMIT_MESSAGE" value="created a merger class, can randomize elements" />
   </component>
 </project>
