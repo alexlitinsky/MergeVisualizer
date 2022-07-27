@@ -3,6 +3,8 @@ package model;
 import java.util.ArrayList;
 import java.util.Random;
 
+import model.sorters.ISorter;
+
 public class Merger {
 
   private ArrayList<Integer> lst;
@@ -34,6 +36,10 @@ public class Merger {
     return copy;
   }
   public void setArr(ArrayList<Integer> arr) {this.lst = arr; }
+
+  public void modify(ISorter sorter) {
+    sorter.applySorter(this);
+  }
 
 
 }

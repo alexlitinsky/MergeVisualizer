@@ -6,6 +6,6 @@ import model.Merger;
 
 public interface ISorter {
 
-  void apply(Merger merger);
+  void applySorter(Merger merger);
 }
 

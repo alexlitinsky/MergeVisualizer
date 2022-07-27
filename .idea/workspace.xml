@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6cbfa59d-9e5f-4612-923a-e9805bf94916" name="Changes" comment="created a merger class, can randomize elements">
-      <change afterPath="$PROJECT_DIR$/src/model/sorters/ISorter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/sorters/MergeSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/SorterTest.java" afterDir="false" />
+    <list default="true" id="6cbfa59d-9e5f-4612-923a-e9805bf94916" name="Changes" comment="implemented merge sort, organized some files">
+      <change afterPath="$PROJECT_DIR$/src/MergeVis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/TextController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/commands/ACommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/commands/ICommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/commands/Merge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/MergeGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/TextControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/IMerger.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Merger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Merger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/MergerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/MergerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/sorters/ISorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/sorters/ISorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/sorters/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/sorters/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SorterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/SorterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -57,21 +62,49 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MergerTest">
-    <configuration name="MergerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.MergeVis">
+    <configuration name="MergeVis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MergeVis" />
       <module name="MergeVisualizer" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MergerTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MergerTest.randomize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SorterTest.apply" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MergeVisualizer" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MergerTest" />
-      <option name="METHOD_NAME" value="randomize" />
+      <option name="MAIN_CLASS_NAME" value="SorterTest" />
+      <option name="METHOD_NAME" value="apply" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextControllerTest.accept" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MergeVisualizer" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TextControllerTest" />
+      <option name="METHOD_NAME" value="accept" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextControllerTest.badAccept" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MergeVisualizer" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TextControllerTest" />
+      <option name="METHOD_NAME" value="badAccept" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextControllerTest.badAccept2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MergeVisualizer" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TextControllerTest" />
+      <option name="METHOD_NAME" value="badAccept2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -79,8 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MergerTest" />
-        <item itemvalue="JUnit.MergerTest.randomize" />
+        <item itemvalue="Application.MergeVis" />
+        <item itemvalue="JUnit.TextControllerTest.badAccept2" />
+        <item itemvalue="JUnit.TextControllerTest.badAccept" />
+        <item itemvalue="JUnit.TextControllerTest.accept" />
+        <item itemvalue="JUnit.SorterTest.apply" />
       </list>
     </recent_temporary>
   </component>
@@ -92,7 +128,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658785612574</updated>
-      <workItem from="1658785616769" duration="5543000" />
+      <workItem from="1658785616769" duration="15460000" />
     </task>
     <task id="LOCAL-00001" summary="adding interface">
       <created>1658786453194</created>
@@ -108,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658788353640</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="implemented merge sort, organized some files">
+      <created>1658791204337</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1658791204337</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +171,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding interface" />
     <MESSAGE value="created a merger class, can randomize elements" />
-    <option name="LAST_COMMIT_MESSAGE" value="created a merger class, can randomize elements" />
+    <MESSAGE value="implemented merge sort, organized some files" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented merge sort, organized some files" />
   </component>
 </project>
