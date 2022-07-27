@@ -12,6 +12,5 @@ public class Merge extends ACommand {
   @Override
   public void applyC() {
     this.model.modify(new MergeSort());
-    // this.view.update(model);
   }
 }

@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6cbfa59d-9e5f-4612-923a-e9805bf94916" name="Changes" comment="implemented merge sort, organized some files">
-      <change afterPath="$PROJECT_DIR$/src/MergeVis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/TextController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/commands/ACommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/commands/ICommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/commands/Merge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/MergeGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/TextControllerTest.java" afterDir="false" />
+    <list default="true" id="6cbfa59d-9e5f-4612-923a-e9805bf94916" name="Changes" comment="added more components">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Merger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Merger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MergeVis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MergeVis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/TextController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/TextController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/commands/Merge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/commands/Merge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/sorters/ISorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/sorters/ISorter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/sorters/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/sorters/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/SorterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/SorterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/MergeGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MergeGUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +122,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658785612574</updated>
-      <workItem from="1658785616769" duration="15460000" />
+      <workItem from="1658785616769" duration="20601000" />
     </task>
     <task id="LOCAL-00001" summary="adding interface">
       <created>1658786453194</created>
@@ -151,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658791204337</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added more components">
+      <created>1658880672101</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1658880672101</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +173,7 @@
     <MESSAGE value="adding interface" />
     <MESSAGE value="created a merger class, can randomize elements" />
     <MESSAGE value="implemented merge sort, organized some files" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented merge sort, organized some files" />
+    <MESSAGE value="added more components" />
+    <option name="LAST_COMMIT_MESSAGE" value="added more components" />
   </component>
 </project>

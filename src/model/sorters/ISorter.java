@@ -7,5 +7,6 @@ import model.Merger;
 public interface ISorter {
 
   void applySorter(Merger merger);
+
 }
 

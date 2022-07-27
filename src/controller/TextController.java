@@ -1,14 +1,17 @@
 package controller;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 import controller.commands.ICommand;
 import controller.commands.Merge;
 import model.Merger;
 import view.MergeGUI;
 
-public class TextController {
+public class TextController implements ActionListener {
   private Merger model;
 
   private MergeGUI view;
@@ -30,11 +33,26 @@ public class TextController {
     if (command == null) {
       throw new IllegalArgumentException("Invalid command.");
     }
-      try {
-        command.applyC();
-      } catch (IllegalArgumentException e) {
-        throw new IllegalArgumentException("Invalid command.");
-      }
-
+    try {
+      command.applyC();
+    } catch (IllegalArgumentException e) {
+      throw new IllegalArgumentException("Invalid command.");
     }
+
   }
+
+  public void go() {
+    this.view.addActionListener(this);
+    this.view.display();
+
+  }
+
+  @Override
+  public void actionPerformed(ActionEvent e) {
+    if (Objects.equals(e.getActionCommand(), "submit")) {
+      System.out.println(MergeGUI.content.getText());
+      this.accept(MergeGUI.content.getText());
+    }
+    this.view.refresh();
+  }
+}
