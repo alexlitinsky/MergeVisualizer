@@ -11,7 +11,7 @@ public class SorterTest {
 
   @Test
   public void apply() {
-    Merger merger = new Merger();
+    Merger merger = new Merger(10);
     merger.modify(new MergeSort());
     System.out.println(merger.getElements());
     ArrayList<Integer> sorted = new ArrayList<Integer>();

@@ -3,10 +3,13 @@ package model.sorters;
 import java.util.ArrayList;
 
 import model.Merger;
+import view.MergeGUI;
 
 public class MergeSort implements ISorter{
 
   private Merger merger;
+
+  private MergeGUI view;
 
   @Override
   public void applySorter(Merger merger) {

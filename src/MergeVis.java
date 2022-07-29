@@ -14,7 +14,7 @@ public class MergeVis {
       throw new RuntimeException(e);
     }
     MergeGUI mergegui = new MergeGUI();
-      TextController c = new TextController(new Merger(), mergegui);
+      TextController c = new TextController(new Merger(100), mergegui);
       c.go();
   }
 }

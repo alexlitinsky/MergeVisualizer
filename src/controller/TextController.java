@@ -35,16 +35,15 @@ public class TextController implements ActionListener {
     }
     try {
       command.applyC();
+      this.view.updateModel(this.model);
     } catch (IllegalArgumentException e) {
       throw new IllegalArgumentException("Invalid command.");
     }
-
   }
 
   public void go() {
     this.view.addActionListener(this);
     this.view.display();
-
   }
 
   @Override

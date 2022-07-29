@@ -1,19 +1,23 @@
 package model;
 
+import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Random;
 
+import javax.swing.*;
+
 import model.sorters.ISorter;
+import view.BarSet;
 
 public class Merger {
 
   private ArrayList<Integer> lst;
 
 
-  public Merger() {
+  public Merger(int num) {
     lst = new ArrayList<Integer>();
-    lst.add(1); lst.add(2); lst.add(3); lst.add(4); lst.add(5); lst.add(6); lst.add(7); lst.add(8);
-    lst.add(9); lst.add(10);
+    for (int i = 0; i < num; i++) { lst.add(i); }
     this.randomize();
   }
 
@@ -35,10 +39,29 @@ public class Merger {
     copy.addAll(lst);
     return copy;
   }
-  public void setArr(ArrayList<Integer> arr) {this.lst = arr; }
+
+  public void setArr(ArrayList<Integer> arr) {
+    this.lst = arr;
+  }
 
   public void modify(ISorter sorter) {
     sorter.applySorter(this);
+  }
+
+  public java.awt.Image draw() {
+    BarSet barset = new BarSet(this.getElements());
+    BufferedImage image = new BufferedImage(barset.getPreferredSize().width,
+            barset.getPreferredSize().height, BufferedImage.TYPE_INT_RGB);
+
+    Graphics2D graphics = image.createGraphics();
+//    graphics.setPaint(Color.green);
+//    graphics.fillRect(0, 0, 100, 100);
+//    graphics.setBackground(Color.white);
+    barset.paint(graphics);
+    graphics.drawImage(image, image.getWidth(new JLabel()),
+            image.getHeight(new JLabel()), new JLabel());
+    graphics.dispose();
+    return image;
   }
 
 
