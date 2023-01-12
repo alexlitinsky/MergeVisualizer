@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="MergeVisualizer:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cbfa59d-9e5f-4612-923a-e9805bf94916" name="Changes" comment="added more components">
-      <change afterPath="$PROJECT_DIR$/src/view/BarSet.java" afterDir="false" />
+    <list default="true" id="6cbfa59d-9e5f-4612-923a-e9805bf94916" name="Changes" comment="sorters now visible in GUI">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/MergeVisualizer_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/commands/Insertion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/commands/Quick.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/commands/Randomize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/commands/Selection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/commands/Set.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/sorters/InsertionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/sorters/QuickSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/sorters/SelectionSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MergeVis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MergeVis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/TextController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/TextController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/commands/ACommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/commands/ACommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Merger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Merger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/sorters/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/sorters/MergeSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/MergeGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MergeGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/SorterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/SorterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/MergerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/MergerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TextControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TextControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,22 +52,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit4&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4&quot;: &quot;&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
@@ -125,7 +147,15 @@
       <option name="presentableId" value="Default" />
       <updated>1658785612574</updated>
       <workItem from="1658785616769" duration="20601000" />
-      <workItem from="1658885803439" duration="14321000" />
+      <workItem from="1658885803439" duration="26810000" />
+      <workItem from="1659390745155" duration="360000" />
+      <workItem from="1659391455679" duration="9259000" />
+      <workItem from="1660531616152" duration="848000" />
+      <workItem from="1661192664015" duration="16000" />
+      <workItem from="1662602688816" duration="481000" />
+      <workItem from="1662603187246" duration="109000" />
+      <workItem from="1670347855267" duration="676000" />
+      <workItem from="1673546925146" duration="684000" />
     </task>
     <task id="LOCAL-00001" summary="adding interface">
       <created>1658786453194</created>
@@ -155,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658880672101</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="sorters now visible in GUI">
+      <created>1659060102305</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1659060102305</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +214,18 @@
     <MESSAGE value="created a merger class, can randomize elements" />
     <MESSAGE value="implemented merge sort, organized some files" />
     <MESSAGE value="added more components" />
-    <option name="LAST_COMMIT_MESSAGE" value="added more components" />
+    <MESSAGE value="sorters now visible in GUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="sorters now visible in GUI" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/model/sorters/QuickSort.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

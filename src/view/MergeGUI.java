@@ -19,7 +19,7 @@ public class MergeGUI extends JFrame  {
 
   private Merger model;
 
-  public MergeGUI() {
+  public MergeGUI(Merger model) {
     this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     this.setLayout(new GridBagLayout());
     GridBagConstraints gbc = new GridBagConstraints();
@@ -29,7 +29,7 @@ public class MergeGUI extends JFrame  {
     gbc.gridy = 0;
 
 
-    model = new Merger(100);
+    this.model = model;
     JLabel modelImage = new JLabel(new ImageIcon(model.draw()));
     array = new JPanel();
     array.setPreferredSize(new Dimension(1200, 750));

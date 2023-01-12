@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MergeVisualizer:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MergeVisualizer_jar</output-path>
+    <root id="archive" name="MergeVisualizer.jar">
+      <element id="module-output" name="MergeVisualizer" />
+    </root>
+  </artifact>
+</component>

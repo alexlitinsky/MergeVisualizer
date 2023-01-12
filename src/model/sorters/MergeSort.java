@@ -2,14 +2,15 @@ package model.sorters;
 
 import java.util.ArrayList;
 
+
 import model.Merger;
-import view.MergeGUI;
 
 public class MergeSort implements ISorter{
 
   private Merger merger;
 
-  private MergeGUI view;
+
+
 
   @Override
   public void applySorter(Merger merger) {
@@ -32,7 +33,6 @@ public class MergeSort implements ISorter{
     for (int i = 0; i < m - l + 1; i++) { tempL.add(i, arr.get(l + i)); }
     for (int i = 0; i < r - m; i++) { tempR.add(i, arr.get(m + 1  + i)); }
     int i = 0, j = 0, k = l;
-
     while(i < m - l + 1 && j < r - m) {
       if (tempL.get(i) <= tempR.get(j)) {
         arr.set(k, tempL.get(i));
@@ -45,7 +45,6 @@ public class MergeSort implements ISorter{
       }
       k++;
     }
-
     while (i < m - l + 1) {
       arr.set(k, tempL.get(i));
       merger.setArr(arr);
@@ -58,6 +57,7 @@ public class MergeSort implements ISorter{
       j++;
       k++;
     }
+
   }
 
 }
